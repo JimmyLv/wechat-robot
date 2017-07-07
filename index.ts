@@ -67,16 +67,18 @@ bot
             .catch(e => console.error(e))
         }
 
-        await simsimi.listen(content, (err, res) => {
-          if (err) return console.error(err)
-          console.log('simsimi say:', res)
+        if (msgType === '1') {
+          await simsimi.listen(content, (err, res) => {
+            if (err) return console.error(err)
+            console.log('simsimi say:', res)
 
-          if (['羡慕', '嫉妒'].indexOf(content) > -1) {
-            room.say(`@${contact}, 滚开!`)
-          }
+            if (['羡慕', '嫉妒'].indexOf(content) > -1) {
+              room.say(`@${contact}, 滚开!`)
+            }
 
-          room.say(`@${contact}, ${res}`)
-        })
+            room.say(`@${contact}, ${res}`)
+          })
+        }
 
         // await room.say(`Hey, ${contact}, 你说的是「${content}」, 我就是不回你你咋地？`)
       }
