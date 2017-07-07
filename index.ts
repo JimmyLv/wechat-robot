@@ -42,12 +42,12 @@ bot
         }
 
         console.info(msg.type())
+        const msgType = msg.type().toString()
 
-        if (content.toString().indexOf('view it on mobile') > -1) {
-          msg.say(`@${contact}, 敢不敢斗图？`)
+        if (content.toString().indexOf('view it on mobile') > -1 || msgType === '3') {
+          msg.say(`@${contact}, 敢不敢斗图发表情？`)
         }
 
-        const msgType = msg.type().toString()
         if (msgType === '47') {
           const regex = /cdnurl = "(.*?)"/g
           const arr = regex.exec(content)
