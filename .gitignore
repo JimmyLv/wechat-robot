@@ -1,0 +1,5 @@
+node_modules/
+
+*.js
+.v8flags.*
+.pki/

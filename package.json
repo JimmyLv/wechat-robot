@@ -1,0 +1,29 @@
+{
+  "name": "demo.wechaty",
+  "version": "1.0.0",
+  "description": "for wechat group",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimmyLv/demo.wechaty.git"
+  },
+  "keywords": [
+    "wechat"
+  ],
+  "author": "JimmyLv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JimmyLv/demo.wechaty/issues"
+  },
+  "homepage": "https://github.com/JimmyLv/demo.wechaty#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "image-downloader": "^3.2.2",
+    "qrcode-terminal": "^0.11.0",
+    "simsimi": "^2.0.2",
+    "wechaty": "^0.7.95"
+  }
+}
