@@ -45,7 +45,7 @@ bot
         const msgType = msg.type().toString()
 
         if (content.toString().indexOf('view it on mobile') > -1 || msgType === '3') {
-          msg.say(`@${contact}, 敢不敢斗图发表情？`)
+          msg.say(`@${contact}, 敢不敢斗图，收藏的表情不够多？`)
         }
 
         if (msgType === '47') {

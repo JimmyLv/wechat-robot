@@ -4,7 +4,7 @@
   "description": "for wechat group",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "docker run -ti --rm --volume=\"$(pwd)\":/bot zixia/wechaty index.ts"
   },
   "repository": {
     "type": "git",
